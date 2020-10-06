@@ -1,5 +1,7 @@
 .header {
-   margin: 40px 20px 0 20px; 
+   margin-top: 40px;
+   margin-left: 20px;
+   margin-right: 20px;
    font-size: 0;
    height: 45px;
    font-family: sans-serif;
@@ -15,6 +17,9 @@
     display: inline;
     margin-right: 15px;
 }
+.menu-item:hover {
+    color: gray ;
+}
 ul {
     text-align: center;
 }
@@ -25,23 +30,38 @@ ul {
     width: 70%;
     text-align: center;
     color: #025157;
+    font-weight: 500;
 }
 .actions {
     width: 15%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
 }
 .actions a {
     color: #67b54b;
+}
+.actions a:hover {
+    color: gray;
 }
 .actions button {
     color: white;
     background-color: #67b54b;
     padding-left: 14px;
     padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
     border-radius: 5px;
+    width: 120px;
+    height: 54px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
-
+/* section */
 body {
     background-color: #fffbf7 ;
+    
 }
 
 h1 {
@@ -49,6 +69,7 @@ h1 {
     text-align: center;
     font-size: 60px;
     margin-bottom: 24px;
+    
 }
 h4 {
     color: #46484c;
@@ -56,27 +77,41 @@ h4 {
 form, h4, p {
     text-align: center;
 }
+h4 {
+    font-family: "Slabo 27px" , serif;
+    color: #46484c;
+    font-size: 20px;
+    font-weight: 400;
+}
 p {
     color: #8b8b8bcc;
-    margin-top: 15px;
+    margin-top: 18px;
+    font-family: "Open Sans" , sans-serif;
 }
-input, button {
-    height: 30px;
-}
-input {
+
+.signup-form input {
     border-radius: 5px 0px 0px 5px ;
     padding: 6px 20px;
     border: solid 1px #8b8b8bcc ;
-    width: 200px;
+    max-width: 200px;
+    width: 15%;
+    height: 40px;
 }
-button {
+.signup-form button {
     border-radius: 0px 5px 5px 0px;
     padding: 6px 20px; 
     color: white;
     background-color: #025157;
     margin-left: -5px;
-    border: none;
+    width: 140px;
+    height: 54px;
 }
+.signup-form > * {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
 img {
     display: block;
     margin: auto;
