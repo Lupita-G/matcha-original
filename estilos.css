@@ -1,3 +1,45 @@
+.header {
+   margin: 40px 20px 0 20px; 
+   font-size: 0;
+   height: 45px;
+   font-family: sans-serif;
+}
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+}
+.menu-item {
+    display: inline;
+    margin-right: 15px;
+}
+ul {
+    text-align: center;
+}
+.logo > img {
+   height: 100;
+}
+.navbar {
+    width: 70%;
+    text-align: center;
+    color: #025157;
+}
+.actions {
+    width: 15%;
+}
+.actions a {
+    color: #67b54b;
+}
+.actions button {
+    color: white;
+    background-color: #67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 5px;
+}
+
 body {
     background-color: #fffbf7 ;
 }
@@ -18,9 +60,24 @@ p {
     color: #8b8b8bcc;
     margin-top: 15px;
 }
-input {
-    border-radius: 5px;
-    padding: 10px;
-    border: solid 1px #8b8b8bcc ;
+input, button {
     height: 30px;
+}
+input {
+    border-radius: 5px 0px 0px 5px ;
+    padding: 6px 20px;
+    border: solid 1px #8b8b8bcc ;
+    width: 200px;
+}
+button {
+    border-radius: 0px 5px 5px 0px;
+    padding: 6px 20px; 
+    color: white;
+    background-color: #025157;
+    margin-left: -5px;
+    border: none;
+}
+img {
+    display: block;
+    margin: auto;
 }
