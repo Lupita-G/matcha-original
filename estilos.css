@@ -44,6 +44,7 @@ ul {
 .actions a:hover {
     color: gray;
 }
+
 .actions button {
     color: white;
     background-color: #67b54b;
@@ -69,7 +70,8 @@ h1 {
     text-align: center;
     font-size: 60px;
     margin-bottom: 24px;
-    
+    font-family: "Alegreya" , serif;
+
 }
 h4 {
     color: #46484c;
@@ -99,7 +101,7 @@ p {
 }
 .signup-form button {
     border-radius: 0px 5px 5px 0px;
-    padding: 6px 20px; 
+    padding: 6px 20px;
     color: white;
     background-color: #025157;
     margin-left: -5px;
@@ -115,4 +117,14 @@ p {
 img {
     display: block;
     margin: auto;
+}
+.publicidad > img {
+    vertical-align: middle;
+    border-style: none;
+    width: 70%;
+}
+h3 {
+    font-family: "Alegreya" , serif;
+    color:#025157;
+    font-size: 40px;
 }
