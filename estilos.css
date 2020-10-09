@@ -13,6 +13,17 @@
     height: 100%;
     line-height: 45px;
 }
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+main {
+    margin-top: 285px;
+    text-align: center;
+}
 .menu-item {
     display: inline;
     margin-right: 15px;
@@ -44,7 +55,6 @@ ul {
 .actions a:hover {
     color: gray;
 }
-
 .actions button {
     color: white;
     background-color: #67b54b;
@@ -62,35 +72,27 @@ ul {
 /* section */
 body {
     background-color: #fffbf7 ;
-    
 }
-
 h1 {
     color: #025157;
     text-align: center;
     font-size: 60px;
     margin-bottom: 24px;
     font-family: "Alegreya" , serif;
-
-}
-h4 {
-    color: #46484c;
-}
-form, h4, p {
-    text-align: center;
 }
 h4 {
     font-family: "Slabo 27px" , serif;
     color: #46484c;
     font-size: 20px;
     font-weight: 400;
+    text-align: center;
 }
 p {
     color: #8b8b8bcc;
     margin-top: 18px;
     font-family: "Open Sans" , sans-serif;
+    text-align: center;
 }
-
 .signup-form input {
     border-radius: 5px 0px 0px 5px ;
     padding: 6px 20px;
@@ -113,7 +115,6 @@ p {
     font-weight: 500;
     font-size: 16px;
 }
-
 img {
     display: block;
     margin: auto;
@@ -123,8 +124,64 @@ img {
     border-style: none;
     width: 70%;
 }
-h3 {
+/*parte del video y su publicidad*/
+.publish > p {
+    font-size: 18px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    text-align: left;
+}
+.publish h3 {
     font-family: "Alegreya" , serif;
     color:#025157;
     font-size: 40px;
+    line-height: 48px;
+    margin: 5px;
+}
+/*utilizando flex*/
+.publish h3 , p , form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 100px;
+}
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+.explanatory-video > * {
+    display: flex;
+    flex-direction: colum;
+    align-items: center;
+    flex: 1;
+    margin-left: 100px;
+}
+.explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+}
+.start > * {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.start button {
+    border-radius: 0px 5px 5px 0px;
+    padding: 6px 20px;
+    color: white;
+    background-color: #025157;
+    margin-left: -5px;
+    width: 140px;
+    height: 54px;
+}
+.start input {
+    border-radius: 5px 0px 0px 5px ;
+    padding: 6px 20px;
+    border: solid 1px #8b8b8bcc ;
+    max-width: 200px;
+    width: 30%;
+    height: 40px;
 }
