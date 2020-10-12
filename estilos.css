@@ -1,3 +1,14 @@
+body {
+    background-color: #fffbf7 ;
+}
+/*Barra de Navegación*/
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
 .header {
    margin-top: 40px;
    margin-left: 20px;
@@ -13,15 +24,17 @@
     height: 100%;
     line-height: 45px;
 }
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fffbf7;
+.logo > img {
+    height: 80%;
+ }
+ /*barra de navegación*/
+ .navbar {
+    width: 70%;
+    text-align: center;
+    color: #025157;
+    font-weight: 500;
 }
-main {
-    margin-top: 285px;
+ ul {
     text-align: center;
 }
 .menu-item {
@@ -31,17 +44,9 @@ main {
 .menu-item:hover {
     color: gray ;
 }
-ul {
-    text-align: center;
-}
-.logo > img {
-   height: 100;
-}
-.navbar {
-    width: 70%;
-    text-align: center;
-    color: #025157;
-    font-weight: 500;
+/*Boton de la barra de navegación*/
+.actions > * {
+    margin: 0 10px;
 }
 .actions {
     width: 15%;
@@ -66,16 +71,15 @@ ul {
     border-radius: 5px;
     width: 120px;
     height: 54px;
-    margin-right: 10px;
-    margin-left: 10px;
 }
-/* section */
-body {
-    background-color: #fffbf7 ;
+/*Section Main*/
+.main {
+    margin-top: 220px;
+    padding: 10px;
+    text-align: center;
 }
 h1 {
     color: #025157;
-    text-align: center;
     font-size: 60px;
     margin-bottom: 24px;
     font-family: "Alegreya" , serif;
@@ -85,14 +89,8 @@ h4 {
     color: #46484c;
     font-size: 20px;
     font-weight: 400;
-    text-align: center;
 }
-p {
-    color: #8b8b8bcc;
-    margin-top: 18px;
-    font-family: "Open Sans" , sans-serif;
-    text-align: center;
-}
+/*Boton del main*/
 .signup-form input {
     border-radius: 5px 0px 0px 5px ;
     padding: 6px 20px;
@@ -115,7 +113,13 @@ p {
     font-weight: 500;
     font-size: 16px;
 }
-img {
+.grey-text {
+    color: #8b8b8bcc;
+    margin-top: 20px;
+    font-family: "Open Sans" , sans-serif;
+}
+/*Logo de capterra e img de publicidad*/
+.intro > img {
     display: block;
     margin: auto;
 }
@@ -124,45 +128,46 @@ img {
     border-style: none;
     width: 70%;
 }
-/*parte del video y su publicidad*/
-.publish > p {
-    font-size: 18px;
-    color: #343434;
-    line-height: 1.5;
-    margin-bottom: 8px;
-    text-align: left;
-}
-.publish h3 {
-    font-family: "Alegreya" , serif;
-    color:#025157;
-    font-size: 40px;
-    line-height: 48px;
-    margin: 5px;
-}
-/*utilizando flex*/
-.publish h3 , p , form {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-left: 100px;
-}
+/*section del video utilizando flex*/
 .promo {
     display: flex;
     width: 70%;
     margin: 100px auto;
     align-items: center;
 }
-.explanatory-video > * {
+.explanatory-video {
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     align-items: center;
     flex: 1;
-    margin-left: 100px;
 }
 .explanatory-video img {
-    width: 120px;
+    width: 130px;
     margin-top: 10px;
 }
+.publish {
+    flex: 1;
+}
+.publish h3 {
+    font-family: "Alegreya" , serif;
+    color:#025157;
+    font-size: 40px;
+    line-height: 48px;
+    margin: auto;
+}
+.publish .info {
+    font-size: 18px;
+    color: #343434;
+    line-height: 1.5;
+    font-family: "Commissioner" , serif;
+}
+.publish .info-gray {
+    color: #8b8b8bcc;
+    margin-top: 15px;
+    font-family: "Open Sans" , sans-serif;
+    font-size: 18px;
+}
+/*Boton del video*/
 .start > * {
     font-family: sans-serif;
     font-weight: 500;
@@ -174,7 +179,8 @@ img {
     color: white;
     background-color: #025157;
     margin-left: -5px;
-    width: 140px;
+    border: none;
+    padding: 6px 20px;
     height: 54px;
 }
 .start input {
@@ -185,3 +191,5 @@ img {
     width: 30%;
     height: 40px;
 }
+
+
