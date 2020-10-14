@@ -195,8 +195,7 @@ h4 {
 /*Usando grid*/
 .features {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    height: 660px;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
     background-color: #025157;
     padding: 5% 10%;
 }
@@ -211,7 +210,7 @@ h4 {
     align-items: center;
     overflow: hidden;
 }
-.features .features-card .feature-content {
+.features .feature-card .feature-content {
     padding: 30px 20px 40px 40px;
     flex: 2;
 }
@@ -226,27 +225,33 @@ h4 {
     font-size: 24px;
     color: #343434;
     font-weight: 400;
+    font-family: "Commissioner" , serif;
 }
 .features .feature-card .feature-content p {
     font-size: 16px;
     color: #7e7e7e;
-    font-weight: 400;
+    font-weight: 0;
+    font-family: "Open Sans" , sans-serif;
 }
 .features .feature-card .feature-content a {
-    font-size: 16px;
+    font-size: 18px;
     color: #67b54b;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
 }
-.features .feature-card .feature-img {
+.features .feature-card .feature-image {
     flex: 1;
     width: 40%;
     position: relative;
     right: -50px;
     height: 80%;
+    transition: right 1s;
 }
-.features .feature-card .feature-img figure,
-.features .feature-card .feature-img img {
+.features .feature-card .feature-image:hover {
+    right: 0;
+}
+.features .feature-card .feature-image figure,
+.features .feature-card .feature-image img {
     margin-top: 0;
     height: 100%;
 }
