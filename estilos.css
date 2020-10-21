@@ -1,66 +1,37 @@
 body {
     background-color: #fffbf7 ;
 }
-/*Barra de Navegación*/
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fffbf7;
-}
-.header {
-   margin-top: 40px;
-   margin-left: 20px;
-   margin-right: 20px;
-   font-size: 0;
-   height: 45px;
-   font-family: sans-serif;
-}
-.header > * {
-    display: inline-block;
-    font-size: 16px;
-    vertical-align: middle;
-    height: 100%;
-    line-height: 45px;
-}
-.logo > img {
-    height: 80%;
- }
- /*barra de navegación*/
- .navbar {
-    text-align: center;
+/*barra de navegación*/
+.navbar-light .nav-item .nav-link {
     color: #025157;
-    font-weight: 500;
+}
+.navbar-light .navbar-toggler {
+    border-color: #025157;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar {
     background-color: #fffbf7;
+    font-weight: 400;
+    font-family: "Slabo 30px" , serif;
+    font-size: 18px;
 }
- ul {
-    text-align: center;
-}
-.menu-item {
-    display: inline;
-    margin-right: 15px;
-}
-.menu-item:hover {
-    color: gray ;
-}
-/*Boton de la barra de navegación*/
 .actions > * {
-    margin: 0 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .actions {
-    width: 15%;
     text-align: right;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
 }
-.fixed-header .header .actions > a {
+.actions a {
     color: #67b54b;
 }
-.fixed-header .header .actions > a:hover {
+.actions > a:hover {
     color: gray;
 }
-
 .actions button {
     color: white;
     background-color: #67b54b;
@@ -70,8 +41,6 @@ body {
     padding-bottom: 12px;
     border: 0;
     border-radius: 5px;
-    width: 120px;
-    height: 54px;
 }
 /*Section Main*/
 .main {
@@ -259,17 +228,6 @@ h4 {
     margin-top: 0;
     height: 100%;
 }
-.navbar-light .nav-item .nav-link {
-    color: #025157;
-  }
-  
-  .navbar-light .navbar-toggler {
-    border-color: #025157;
-  }
-
-  .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
   /*Postwork*/
   .card-container {
     background-color: #a1d683;
@@ -329,7 +287,6 @@ h4 {
     margin-left: 15%;
     list-style: none;
   }
-  
   .success-stories .stories-carousel .card {
     width: 80%;
     background-color: #fff;
@@ -338,7 +295,6 @@ h4 {
     color : #025157;
     position: relative;
   }
-  
   .success-stories .stories-carousel .card .everly {
     background-image: url('https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png');
     height: 275px;
@@ -346,7 +302,6 @@ h4 {
     background-size: cover;
     background-position: center;
   }
-  
   .success-stories .stories-carousel .card .card-circle-everly {
     position: absolute;
     bottom: 255px;
