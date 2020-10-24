@@ -380,52 +380,87 @@ h4 {
     padding-right: 10px;
 }
 
-
-
-.success-stories .stories-carousel .carousel-indicators {
-    position: initial; ó: position: static;
+.card {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.card .card-media > img {
+    height: 100px;
+    width: 100px;
+}
+.card .card-media figure > img {
+    width: 265px;
+    height: 230px;
+    border-radius: 8px;
+}
+.card .company-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f9da73;
+    background-image: url(https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png);
+    background-position: center;
+    border: 5px solid #f9da73;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+}
+.card .company-summit {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f9da73;
+    background-image: url(https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png);
+    background-position: center;
+    border: 5px solid #f9da73;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.card .company-mambe {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f9da73;
+    background-image: url(https://getmatcha.com/wp-content/uploads/2019/06/mambe-logo-1.png);
+    background-position: center;
+    border: 5px solid #f9da73;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.card .card-body {
+    justify-content: center;
+}
+.card .card-footer > button {
+    border: none;
+    background-color: #025157;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 20px;
+    text-align: center;
+}
+.carousel-indicators {
+    position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 15;
+    display: flex;
+    justify-content: center;
     padding-left: 0;
     margin-right: 15%;
     margin-left: 15%;
     list-style: none;
-    display: flex;
-    justify-content: center;
 }
-.success-stories .stories-carousel .card {
-    width: 80%;
-    background-color: #fff;
-    border-radius: 10px;
-    height: 564px;
-    color : #025157;
-    position: relative;
-}
-.success-stories .stories-carousel .card .card-img-top-everly {
-    background-image: url('https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png');
-    height: 275px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.success-stories .stories-carousel .card .card-circle-everly {
-    position: absolute;
-    bottom: 255px;
-    right: 20px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #f9da73;
-    background-image: url('https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 5px;
-    border: 5px solid #f9da73;
-}
+
+
+
+
+
+
+
 
 @media(max-width: 575px) {
     .main {
