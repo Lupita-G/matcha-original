@@ -1,3 +1,64 @@
+.navbar-light .nav-item .nav-link {
+  color: #025157;
+}
 
+.navbar-light .navbar-toggler {
+  border-color: #025157;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar {
+  background-color: #fffbf7;
+  font-weight: 400;
+  font-family: "Slabo 30px", serif;
+  font-size: 18px;
+}
+
+.actions > * {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.actions {
+  text-align: right;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.actions a {
+  color: #67b54b;
+}
+
+.actions > a:hover {
+  color: gray;
+}
+
+.actions button {
+  color: white;
+  background-color: #67b54b;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.ejercicio {
+  display: flex;
+  flex-direction: row;
+}
+.ejercicio .filas {
+  flex: 1;
+}
+.ejercicio .columnas {
+  flex: 1;
+}
+.ejercicio .combinado {
+  flex: 1;
+}
 
 /*# sourceMappingURL=output.css.map */

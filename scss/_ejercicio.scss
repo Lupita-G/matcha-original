@@ -1,0 +1,17 @@
+.ejercicio {
+    display: flex;
+    flex-direction: row;
+
+    .filas {
+        flex: 1;
+    }
+    .columnas {
+        flex: 1;
+    }
+    .combinado {
+        flex: 1;
+    }
+
+
+}
+
